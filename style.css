@@ -43,7 +43,10 @@
 
 .services-option {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 40px;
 }
 
 header {
@@ -188,8 +191,22 @@ li:hover {
 
 .services-menu img {
     padding: 20px 20px 20px 0;
+    overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 3; /* number of lines to show */
+           line-clamp: 2; 
+   -webkit-box-orient: vertical;
 }
 
+.services-menu .menu-content p{
+    /* overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 3; /* number of lines to show */
+           line-clamp: 2; 
+   -webkit-box-orient: vertical; */
+}
 
 .services-menu .menu-button{
     display: grid;
@@ -209,6 +226,11 @@ li:hover {
     border: 1px solid #458FF6;
     border-radius: 25px;
     background: none
+}
+
+.menu-button button:hover{
+    width: 18%;
+    transition: 0.1s;
 }
 
 .menu-button button a{
@@ -496,3 +518,51 @@ li:hover {
 
 /*======= Footer =======*/
 
+.footer{
+    background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 80px;
+    color: #FFFFFF;
+}
+
+.footer-company{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-company-logo img{
+    width: 30%;
+    color: white;
+}
+
+.footer-menu{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.footer-company-content .content{
+    padding: 20px 0 20px 0;
+}
+
+.footer-company-content p{
+    font-weight: 300;
+}
+
+.menu-nav-head{
+    font-weight: 700;
+}
+
+.menu-nav-item p{
+    padding: 15px 0 0 0;
+    font-weight: 300;
+}
+
+.menu-nav-item p a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
