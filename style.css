@@ -381,6 +381,126 @@ header{
 
 /*========= Check out =========*/
 
+.checkout{
+    width: 100%;
+    /*margin: auto;*/
+}
 
+.checkout-header{
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.checkout-content{
+    width: 100%;
+    display: flex;
+}
+
+.checkout-content .checkout-menu{
+    width: calc(33.33% - 100px);
+    margin: auto;
+    /*border-radius: 20px;*/
+}
+
+.checkout-menu .menu-table-img img{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.menu-table-content {
+    border-radius: 0 0 25px 25px;
+    padding: 20px;
+}
+
+.menu-table-content h4 {
+    font-weight: 700;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    /*line-clamp: 2;*/
+    -webkit-box-orient: vertical;
+}
+
+.menu-table-content p{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.checkout button {
+    color: #4089ED;
+}
+
+.checkout button:hover {
+    font-weight: bold;
+}
+
+.checkout button i {
+    padding-left: 10px;
+}
 
 /*======= Footer =======*/
+
+.footer{
+    /*background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);*/
+    display: flex;
+    justify-content: space-around;
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+.footer-menu{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: space-evenly;
+}
+
+/*.footer-menu .menu-nav{*/
+/*    display: flex;*/
+/*    flex-wrap: wrap;*/
+/*    align-content: center;*/
+/*    justify-content: space-between;*/
+/*}*/
+
+.menu-nav-item{
+    /*margin-left: 35px;*/
+    margin-right: 35px;
+}
+
+.menu-nav-item p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /*display: flex;*/
+}
+
+.menu-nav-item p a{
+    text-decoration: none;
+}
+
+.menu-nav-item p:hover{
+    font-weight: bold;
+}
+
+
+.menu-nav .menu-nav-head{
+    padding-bottom: 15px;
+}
+
+
+.footer-menu .menu-nav {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.footer-company-content {
+    width: 50%;
+    /* margin: auto; */
+}
+
+.footer-company-content .content{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
