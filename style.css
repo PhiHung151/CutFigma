@@ -77,7 +77,7 @@ header{
 }
 
 .content-hero-img{
-    width: 100%;
+    max-width: 100%;
 }
 
 .content-hero-text{
@@ -194,7 +194,7 @@ header{
 }
 
 .menu-content p{
-    /*padding-top: 15px;*/
+    padding-top: 15px;
     font-weight: 300;
     /*overflow: hidden;*/
     /*display: -webkit-box;*/
@@ -207,6 +207,10 @@ header{
 .menu-button{
     margin: 25px;
     text-align: center;
+}
+
+.menu-button button{
+    background: none;
 }
 
 .menu-button a{
@@ -556,4 +560,176 @@ img.user-img-avatar {
 .footer-company-content .content{
     padding-top: 25px;
     padding-bottom: 25px;
+}
+
+/*===== UPDATE  =====*/
+
+.nav__overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.2);
+    opacity: 0;
+    visibility: hidden;
+    transition:all 0.4s ease-in-out;
+}
+
+#toggle{
+    display: none;
+    position: absolute;
+}
+
+.content-hero-img button {
+    margin-top: 35px;
+    width: 100%;
+    background: none;
+}
+
+.content-hero-button a{
+    font-weight: 700;
+    text-decoration: none;
+    color: #FFFFFF;
+    background: #458FF6;
+    padding: 10px 20px;
+    border-radius: 55px;
+}
+
+.content-hero-button a:hover{
+    padding: 20px 30px 20px 30px;
+}
+
+.content-hero-button{
+    display: none;
+}
+
+/*===== Responsive  =====*/
+
+@media (max-width: 391px) {
+
+    .body{
+        width: 390px;
+    }
+
+    /*====  Header  ====*/
+    header .head-logo{
+        width: 50%;
+        display: flex;
+        /*align-items: center;*/
+    }
+
+    .head-nav nav ul {
+        font-size: 10px;
+    }
+
+    #toggle{
+        display: block;
+    }
+
+    /*.menu-hamberger{*/
+    /*    display: flex;*/
+    /*    align-items: center;*/
+    /*}*/
+    
+    .head-nav nav{
+        position: absolute;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background: rgb(2,0,36);
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(156,156,231,1) 0%, rgba(90,180,241,1) 94%, rgba(0,212,255,1) 100%);
+        backdrop-filter: blur(5px);
+    }
+
+    .head-nav ul{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .head-nav nav ul li{
+        margin: 25px 0;
+        font-size: 1.2em;
+    }
+
+
+    /*====  Content Hero   ====*/
+
+    .content-hero{
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .content-hero-text{
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .content-hero-text h1{
+        margin-top: 15px;
+        width: 100%;
+    }
+
+    .content-hero-text p{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        width: 100%;
+    }
+
+    .content-hero-text button{
+        display: none;
+    }
+
+    .content-hero-button{
+        display: block;
+    }
+
+
+    /*====  Content Services ====*/
+
+    .content-services{
+        width: 100%;
+        margin: auto;
+        margin-top: 100px;
+    }
+
+    .services-header p{
+        width: 70%;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3; /* number of lines to show */
+        line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+
+    .services-option{
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 9; /* number of lines to show */
+        line-clamp: 2;
+        -webkit-box-orient: vertical;
+
+    }
+
+
+    /*.services-menu{*/
+    /*    width: calc(33.33% - 100px);*/
+    /*    padding: 1px;*/
+    /*}*/
+
+
+
+    /*====  Content Providers   ====*/
+
+    /*====  Content Mobile  ====*/
+
+    /*====  Content Customer    ====*/
+
+    /*====  Content Checkout    ====*/
+
+    /*====  Footer  ====*/
+
 }
