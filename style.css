@@ -89,6 +89,9 @@ header{
     padding-right: 12em;
 }
 
+img.img-fluid {
+    width: 100%;
+}
 
 .container-hero-text h1{
     font-weight: bold;
@@ -172,8 +175,8 @@ header{
 }
 
 p.our-services {
-    margin-left: 18em;
-    margin-right: 18em;
+    margin-left: 25em;
+    margin-right: 25em;
     padding-top: 15px;
     font-weight: 300;
 }
@@ -183,8 +186,8 @@ p.our-services {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    margin-left: 8em;
-    margin-right: 8em;
+    margin-left: 20em;
+    margin-right: 20em;
 }
 
 .services-menu{
@@ -199,11 +202,16 @@ p.our-services {
     padding-bottom: 25px;
     width: 100%;
     height: 145px;
+    display: flex;
 }
 
 .menu-children{
     padding-left: 20px;
     padding-right: 20px;
+}
+
+.content-text{
+    height: 180px;
 }
 
 .menu-content h4{
@@ -245,6 +253,7 @@ p.our-services {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0;
 }
 
 .provider-img.col-xl-6 img{
@@ -279,6 +288,20 @@ p.our-services {
 
 /*=========== Mobile App ===========*/
 
+.mobile-app{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile-img  img{
+    width: 100%;
+}
+
+.mobile-content-text {
+    padding-left: 6em;
+    padding-right: 6em;
+}
 
 /*======== Customer =======*/
 
