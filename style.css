@@ -36,6 +36,11 @@ header{
     margin-bottom: 15px;
 }
 
+.head-logo{
+    display: flex;
+    justify-content: center;
+}
+
 .head-logo img{
     width: 70%;
     padding-right: 15px;
@@ -317,11 +322,8 @@ p.our-services {
 
     .container{
         font-size: 14px;
-        /*width: 100%;*/
-        /*margin: auto;*/
         display: flex;
         flex-wrap: wrap;
-        /*align-items: center;*/
         justify-content: center;
     }
 
